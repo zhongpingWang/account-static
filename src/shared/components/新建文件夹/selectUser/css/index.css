@@ -1,0 +1,536 @@
+ 
+.wrapSelectUser{
+	/*width:0px;height: 0px;position: relative;display: inline;*/
+}
+
+/* 精简模式  */
+.overflowEllipsis {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.userSelectBox {
+	position: absolute;
+	background: #fff;
+	z-index: 100;
+}
+.userSelectBoxMask {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0, 0, 0, .6);
+	z-index: 99;
+}
+.userSelectBox.Lite {
+	width: 250px;
+	min-height: 82px;
+	border: 1px #ccc solid;
+}
+.task-detail-dialog .task-block-wrapper .userSelectBox .commoniconfont {
+	color: #ccc;
+}
+.userSelectBox.center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.userSelectBox .arrorOuter {
+	position: absolute;
+	border: 7px transparent solid;
+	border-bottom-color: #ccc;
+	top: -14px;
+	left: 20px;
+}
+.userSelectBox .arrorInner {
+	position: absolute;
+	border: 7px transparent solid;
+	border-bottom-color: #fff;
+	top: -6px;
+	left: -7px;
+}
+.userSelectTopBox .arrorOuter{
+	border-bottom-color: transparent;
+	border-top-color: #ccc;
+	top: auto;
+	bottom: -15px;
+}
+.userSelectTopBox .arrorInner{
+	top:-8px;
+	border-bottom-color: transparent;
+	border-top-color: #fff;
+}
+.userSelectBox .txtUser {
+	outline: none;
+	width: 230px;
+	border: 1px #ccc solid;
+	border-radius: 3px;
+	margin: 10px;
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	padding-left: 7px;
+	box-sizing: border-box;
+}
+.userSelectBox .txtUser:focus {
+	border: 1px #5a8ced solid;
+}
+.userBox {
+	margin-bottom: 10px;
+	max-height: 192px;
+	min-height: 192px;
+	overflow-y: auto;
+}
+.userBox.frequent {
+	min-height: 40px;
+}
+.userBox .Users {
+	display: grid;
+	width: auto;
+}
+
+.userBox .Users .iconDep {
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+.userBox .uerText {
+	padding-left: 10px;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.userBox .userItem {
+	font-size: 12px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 15px;
+	cursor: default;
+	white-space: nowrap;
+	color:#666;
+	list-style: none;
+}
+.userBox .userItem .btnSwitch{
+	cursor:pointer;
+}
+.userItem .icon-arrowdown16:before {
+	content: "\e601";
+}
+.userBox .userItem:hover {
+	background: #e6f9ff;
+}
+
+.userBox .userItem.noneUser {
+	color: #ccc;
+	text-align:center;
+}
+.userBox .userItem.noneUser:hover {
+	background: #fff;
+}
+.userBox .userImg {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin-top: 4px;
+	vertical-align: top;
+}
+.userBox .spName {
+	margin-left: 7px;
+	padding-right: 10px;
+	width:140px;
+}
+.userBox .depItem .spName {
+	vertical-align: top;
+}
+.Full .userBox .sicon-checkbox + .spName {
+	margin-left: 0;
+}
+.Full .userBox .userImg + .sicon-checkbox {
+	margin-top: 7px;
+	margin-left: 5px;
+}
+.Full .frequent-contact li {
+	padding-left: 20px;
+	height: 32px;
+	line-height: 32px;
+}
+.Full .frequent-contact li:hover {
+	background: #e6f9ff;
+}
+
+.Full .has-frequent .leftDeps .tipText {
+	border-bottom: 1px solid #ccc;
+}
+.Full .has-frequent .leftDeps .tipText span {
+	position: relative;
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	cursor: pointer;
+}
+.Full .has-frequent .tipText span.selected::before,
+.Full .has-frequent .tipText span.selected:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-10px);
+	margin: 0;
+	border-bottom: 8px solid #fff;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.Full .has-frequent .tipText span.selected::before {
+	top: 22px;
+	border-bottom-color: #ccc;
+}
+.Full .has-frequent .tipText span.selected:after {
+	top: 24px;
+}
+.Full .tipText .frequent-btn {
+	display: none;
+}
+.Full .has-frequent .tipText .frequent-btn {
+	display: inline-block;
+}
+.Full .search-list {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 270px;
+	margin-left: 18px;
+	height: 238px;
+	border: 1px #ccc solid;
+	background: #fff;
+	z-index: 10;
+	overflow: auto;
+}
+
+
+.userSelectBox .depSelect,
+.userSelectBox .userSelect{
+	padding: 10px 0px;
+	border-top: 1px #ccc solid;
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px;
+	margin: 0px 13px;
+	color: #5a8ced;
+	cursor: pointer;
+	box-sizing:content-box;
+}
+
+/* 开放模式 */
+.userSelectBox.Full {
+	border: 1px #ccc solid;
+	width: 500px;
+}
+.userSelectBox .header {
+	padding: 0px 18px;
+	height: 44px;
+	line-height: 44px;
+}
+.userSelectBox .header .btnClose {
+	float: right;
+	font-size: 17px;
+	cursor: pointer;
+}
+.userSelectBox .txtUserFull {
+	outline: none;
+	border: 1px #ccc solid;
+	height: 28px;
+	margin-left: 18px;
+	width: 455px;
+	padding-left: 7px;
+	border-radius: 3px;
+}
+.userSelectBox .txtUserFull:focus {
+	border: 1px #5a8ced solid;
+}
+
+.frequent-contact {
+	display: none;
+	width: 268px;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.frequent-contact .title {
+	font-size: 14px;
+	padding-left: 20px;
+	margin-bottom: 8px;
+}
+.frequent-contact li {
+	cursor: pointer;
+	user-select: none;
+}
+.frequent-contact .userImg {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin-top: 4px;
+	vertical-align: top;
+}
+.frequent-contact .sicon-checkbox {
+	margin: 7px 3px 0 5px;
+	vertical-align: top;
+	background-position: -350px 0;
+	cursor: pointer;
+}
+.frequent-contact .sicon-checkbox.selected {
+	background-position: -1248px -72px;
+}
+.frequent-contact .no-user {
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+	cursor: default;
+}
+.frequent-contact .no-user:hover {
+	background: #fff;
+}
+.Lite .userBox {
+	margin-bottom: 0;
+}
+.Lite .userBox.no-frequent .frequent-contact {
+	padding-bottom: 0;
+}
+
+.Lite .frequent-contact {
+	width: 100%;
+	margin-left: 0;
+	border: 0;
+	margin-top: -8px;
+	padding: 0 0 8px;
+	z-index: 100;
+	border-bottom: 1px solid #ccc;
+}
+.Lite .frequent-contact .userItem {
+	padding-left: 15px;
+}
+.Lite li .title {
+	padding-left: 0;
+	color: #999;
+	margin: 10px 15px;
+}
+.Lite .no-frequent .frequent-contact .title {
+	margin-bottom: 1px;
+}
+
+.Lite .frequent-contact .sicon-checkbox{
+	display: none;
+}
+
+.userSelectBox .containers {
+	position: relative;
+	height: 238px;
+	margin-top: 10px;
+}
+.userSelectBox .containers .leftDeps {
+	float: left;
+	width: 270px;
+	margin-left: 18px;
+	height: 100%;
+	border: 1px #ccc solid;
+}
+.userSelectBox .containers .tipText {
+	height: 30px;
+	background: #f4f4f4;
+	font-size: 12px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.userSelectBox .containers .rightSelects {
+	float: right;
+	width: 180px;
+	border: 1px #ccc solid;
+	margin-right: 18px;
+	height: 100%;
+}
+
+.userSelectBox .containers .btnDelete {
+	color: #ccc;
+	float: right;
+	cursor: pointer;
+	margin-right: 10px;
+	display: none;
+}
+.userSelectBox .containers .btnDelete:hover{
+	color:#06c;
+}
+.userSelectBox .containers .selItem {
+	height: 26px;
+	line-height: 26px;
+	cursor: default;
+}
+.userSelectBox .containers .selItem:hover {
+	background: #eaf5ff;
+}
+.userSelectBox .containers .selItem:hover .btnDelete {
+	display: block;
+}
+.userSelectBox .containers .selItem.noneUser {
+	text-align: center;
+	font-size: 12px;
+	color: #ccc;
+}
+.userSelectBox .containers .selItem.noneUser:hover {
+	background: #fff;
+}
+.userSelectBox .containers .selItem .iconDep {
+	margin-left: 8px;
+	margin-right: 4px;
+}
+
+.userSelectBox .rightSelects .iconCreatorUser {
+	margin-left: 10px;
+	margin-right: 8px;
+	font-size: 15px;
+	vertical-align: -1px;
+	color: #999;
+}
+
+.userSelectBox .containers .selImg {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	vertical-align: top;
+	margin-top: 2px;
+	margin-left: 8px;
+	margin-right: 5px;
+}
+
+.userSelectBox .selUsers{
+	max-height: 206px;
+    overflow-y: auto;
+}
+
+.userSelectBox .containers .depText {
+	width:104px;
+	font-size: 12px;
+	vertical-align: top;
+}
+.sicon-checkbox {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	background: url(../images/csg.png) no-repeat;
+}
+.userSelectBox .containers  .sicon-checkbox.selected {
+	background-position: -1248px -72px;
+}
+.userSelectBox .containers .sicon-checkbox {
+	cursor: pointer;
+	vertical-align: top;
+	margin-top: 5px;
+	margin-right: 3px;
+	margin-left: 3px;
+	background-position: -350px 0;
+}
+.userSelectBox .containers .fullItem {
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.userSelectBox .containers .fullItem:hover {
+	background: #eaf5ff;
+}
+.userSelectBox .containers .fullImg {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	vertical-align: top;
+	margin-top: 2px;
+}
+.userSelectBox .containers .iconDep {
+	font-size: 21px;
+	vertical-align: -2px;
+	margin-left: -2px;
+	margin-right: -6px;
+	color:#999;
+}
+.userSelectBox .containers .icon-arrowdown16 {
+	vertical-align: -2px;
+}
+.userSelectBox .containers .hidden {
+	visibility: hidden;
+}
+.userSelectBox .myFooter {
+	text-align: right;
+	font-size: 14px;
+	height: 44px;
+	line-height: 44px;
+	padding-right: 20px;
+}
+.userSelectBox .myFooter .btnCancel {
+	margin-left: 16px;
+	cursor: pointer;
+}
+.userSelectBox .myFooter .btnCancel .icon-cancel16 {
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}
+.userSelectBox .myFooter .btnEnter {
+	cursor: pointer;
+}
+.userSelectBox .myFooter .icon-confirm16 {
+	color: #7bb600;
+}
+
+.userSelectBox .myFooter em{
+	color:#666;
+}
+.userSelectWorkspace{
+	padding:10px 18px;
+	cursor:pointer;
+	position:relative;
+}
+.userSelectWorkspace .dropdown-toggle{
+	position:relative;
+	border:1px solid #ccc;
+	color:#999;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	text-indent:7px;
+	border-radius:3px;
+}
+.userSelectWorkspace .caret-msg{
+	position:absolute;
+    top: 11px;
+    right: 8px;
+	display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.userSelectWorkspace .drp-menus {
+    display: none; 
+    z-index: 100;
+    position: absolute;
+    background-color: #fff;
+    left: 18px;
+    right: 18px;
+    border: 1px solid #ccc;
+    top: 41px;
+}
+.userSelectWorkspace .drp-menus li{color:#666;line-height:30px;padding:0 7px;max-height:170px;overflow-y:auto;}
+.userSelectWorkspace .drp-menus li.selected,.userSelectWorkspace .drp-menus li:hover{background-color:#e6f9ff;}

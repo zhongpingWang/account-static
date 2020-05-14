@@ -1,0 +1,75 @@
+.genStyle(@name, @color) {
+
+    .@{name} {
+
+        &Bg {
+            background-color: @color  !important;
+        }
+
+        &Color {
+            color: @color  !important;
+            &Hover:hover{
+                color: @color  !important;
+            }
+        }
+
+        &Border {
+            border-color: @color  !important;
+        }
+    }
+
+}
+
+a,
+.action {
+    color: @c2;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.input-focus {
+    border-color: @c2  !important;
+    outline-color: @c2  !important;
+}
+
+.btnPrimary {
+    color: #fff !important;
+    background-color: @c2  !important;
+    border-color: @c2  !important;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 14px;
+}
+
+option::-ms-expand {
+    display: none;
+}
+
+option {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari 和 Chrome */
+    appearance: none;
+}
+
+/* --背景色字体颜色--*/
+option:hover {
+    background-color: @c2  !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.input-focus {
+    border-color: @c2  !important;
+}

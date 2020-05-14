@@ -1,0 +1,248 @@
+body,ul,li,div{padding:0;margin:0;}
+
+ul,li{
+ list-style-type: none;
+}
+
+
+.uploadBox{
+	display: none;
+	position: fixed;
+	bottom:10px;
+	right:10px;
+	width:614px;
+	height: 416px;
+	background: #fff;
+	font-size: 12px;
+	border:1px #ccc solid;
+	z-index: 999;
+}
+.uploadBox .txtUpload,.txtUpload{
+	display: none;
+}
+
+.overflowEllipsis { vertical-align: middle; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.Left{float: left;}
+.Right{float: right;}
+
+/* header */
+.uploadBox .uploadHeader{
+	background-color: #408cdf;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: move;
+}
+
+.uploadBox .uploadHeader .imgClr{
+	float: left;  
+	width:14px;
+	height: 14px;
+	background: url(../images/uploadicons.png) no-repeat;
+	margin-top: 13px;
+}
+.uploadBox .uploadHeader .uploadIconArrowUp{
+    margin-left: 9px; 
+}
+.uploadBox .uploadHeader .uploadheaderTitle{
+	float: left;
+}
+
+.uploadBox .uploadHeader .uploadStatusTitle{
+	margin-left: 8px;
+	margin-right: 5px;
+}
+
+.uploadBox .uploadHeader .uploadWindowOp{
+	float: right;
+	padding-right: 10px;
+}
+
+.uploadBox .uploadHeader .uploadWindowSize{
+	background-position: -14px 0px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.uploadBox .uploadHeader .uploadWindowSize.ZoomUpload{
+	background-position: 0px 0px;
+}
+
+.uploadBox .uploadHeader .uploadWindowClose{
+	background-position: -28px 0px;
+	cursor: pointer;
+}
+
+/* content  */
+.uploadBox .uploadContent .uploadFileListHeader{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px #ccc solid;
+}
+
+.uploadBox .uploadContent .textClr{
+	float: left;
+	font-size: 14px;
+}
+.uploadBox .uploadContent .plName{
+	width:330px;
+	padding-left: 10px;
+	padding-right: 50px;
+}
+.uploadBox .uploadContent .plSize {
+	width:90px;
+}
+
+.uploadBox .uploadContent .plStatus {
+	width:60px;
+}
+
+.uploadBox .blPre{
+	vertical-align: 1px;
+    margin-left: 3px;
+    color: #e04444;
+}
+
+.uploadBox .uploadFileList{
+	height: 295px;
+    overflow-y: auto;
+}
+
+.uploadBox .uploadFileList.reuploadAll{
+	height: 225px; 
+}
+
+.uploadBox .reUploadAll{
+	display: none;
+	height:70px;
+}
+.uploadBox .reUploadAll .btnReUploadAll{ 
+	cursor: pointer;
+	float: right;
+	background: #208aee;
+	width:92px;height: 32px;
+	border-radius: 5px;
+	color: #fff;
+	margin-right:15px; 
+	text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+ 
+.uploadBox .uploadFileList .uploadItem{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px #ccc solid;
+	color:#999;
+
+}
+
+.uploadBox .uploadFileList .uploadItem .textClr{
+		font-size: 12px;
+}
+
+
+/* footer */
+.uploadBox .uploadFooter{
+	background: #e5e5e5;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+}
+
+
+/*  上传按钮   */
+.uploadDropdownButtons{
+	display: none;
+	position: absolute;
+    width: 89px;
+    top: 100px;
+    left: 100px;
+    background: #fff;
+    z-index: 99999;
+    border: 1px #ccc solid;
+    font-size: 14px;
+    border-bottom: 0;
+}
+
+.uploadDropdownButtons .btnItem{
+	height: 30px;
+    border-bottom: 1px #ccc solid;
+    padding-left: 10px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+/* body line  */
+.dropTopLine{
+    position: fixed;
+    top: 0px;
+    height: 5px;
+    background: blue;
+    left: 0px;
+    right: 0px;	
+}
+
+.dropbottomLine{
+    position: fixed;
+    bottom: 0px;
+    height: 5px;
+    background: blue;
+    left: 0px;
+    right: 0px;	
+}
+
+.dropLeftLine{
+    position: fixed;
+    top: 0px;
+    bottom:0px;
+    width: 5px;
+    background: blue; 
+}
+
+.dropRightLine{
+    position: fixed;
+    right:0px;
+    top: 0px;
+    bottom:0px;
+    width: 5px;
+    background: blue; 
+}
+.dropLineStatus{
+	display: none;
+}
+.dropLineStatus.show{
+	display: block;
+}
+.iconErrorTip{
+	color: #ff8000;
+}
+.plAction .reUpload{
+	cursor: pointer;
+    color: #408cdf;
+}
+.iconSuccessTip{
+	color: #6ebf5a;
+}
+.uploadCount{
+	margin-left: 5px;
+}
+.btnCanelUpload,.btnCanelUploadPre{
+	cursor: pointer;
+}
+.plAction .btnCanelUpload{
+	    margin-left: 8px;
+    color: #408cdf;
+    cursor: pointer;
+}
+.uploadFooter .uploadTipText{
+	float: left;
+}
+.uploadFooter .uploadTipSize{
+	float: right;
+}

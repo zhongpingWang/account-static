@@ -1,0 +1,37 @@
+{
+  "id": "1803290",
+  "name": "account-static",
+  "font_family": "account-iconfont",
+  "css_prefix_text": "account-iconfont-",
+  "description": "account-static",
+  "glyphs": [
+    {
+      "icon_id": "6854922",
+      "name": "warning",
+      "font_class": "warning",
+      "unicode": "e823",
+      "unicode_decimal": 59427
+    },
+    {
+      "icon_id": "7236154",
+      "name": "success",
+      "font_class": "success",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "10603324",
+      "name": "info",
+      "font_class": "info",
+      "unicode": "e741",
+      "unicode_decimal": 59201
+    },
+    {
+      "icon_id": "12645906",
+      "name": "Error",
+      "font_class": "error",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    }
+  ]
+}
